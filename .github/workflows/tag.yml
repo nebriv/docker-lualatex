@@ -9,11 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Build Docker Image
-    - uses: actions/checkout@v2
-      run: make
+      - uses: actions/checkout@v2
+      - name: Build Docker Image
+        run: make
 
-    - name: Push to Docker Hub
-    - run: |
-        docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_ACCESS_TOKEN }}
-        make push
+      - name: Push to Docker Hub
+        run: |
+          docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_ACCESS_TOKEN }}
+          make push
