@@ -13,7 +13,7 @@ WORKDIR /texlive-setup/install-tl
 COPY src/texlive.profile texlive.profile
 RUN ./install-tl --profile=texlive.profile
 
-ENV PATH="/usr/local/texlive/2017/bin/x86_64-linux:${PATH}"
+ENV PATH="/usr/local/texlive/2021/bin/x86_64-linux:${PATH}"
 
 RUN mkdir /src
 WORKDIR /src
