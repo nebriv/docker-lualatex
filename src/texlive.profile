@@ -21,7 +21,6 @@ collection-xetex 1
 collection-tabu 1
 collection-changepage 1
 collection-enumitem 1
-collection-microtype 1
 collection-latexextra 1
 instopt_adjustpath 0
 instopt_adjustrepo 1
