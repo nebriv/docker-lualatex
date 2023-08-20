@@ -18,6 +18,11 @@ collection-latexrecommended 1
 collection-luatex 1
 collection-metapost 1
 collection-xetex 1
+collection-tabu 1
+collection-changepage 1
+collection-enumitem 1
+collection-microtype 1
+collection-latexextra 1
 instopt_adjustpath 0
 instopt_adjustrepo 1
 instopt_letter 0
