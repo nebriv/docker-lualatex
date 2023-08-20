@@ -14,7 +14,7 @@ COPY src/texlive.profile texlive.profile
 RUN ./install-tl --profile=texlive.profile
 
 ENV PATH="/usr/local/texlive/2023/bin/x86_64-linux:${PATH}"
-RUN tlmgr install geometry fontspec parskip etoolbox tabu changepage enumitem microtype lastpage needspace
+RUN tlmgr install geometry fontspec parskip etoolbox tabu changepage enumitem microtype lastpage needspace multicol hyperref
 
 
 RUN mkdir /src
