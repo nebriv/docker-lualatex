@@ -3,7 +3,7 @@ FROM debian:bullseye
 RUN mkdir /texlive-setup
 WORKDIR /texlive-setup
 
-RUN apt-get update && apt-get install -y make wget perl-modules ca-certificates
+RUN apt-get update && apt-get install -y make wget perl-modules ca-certificates gh git
 RUN wget -q https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
     && mkdir install-tl \
     && tar xzf install-tl-unx.tar.gz -C install-tl --strip-components 1
